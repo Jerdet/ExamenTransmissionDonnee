@@ -117,6 +117,7 @@
             this.ethernet.TabIndex = 2;
             this.ethernet.TabStop = false;
             this.ethernet.Text = "Via Ethernet";
+            this.ethernet.Visible = false;
             // 
             // pingGroup
             // 
@@ -238,6 +239,7 @@
             this.usart.TabIndex = 3;
             this.usart.TabStop = false;
             this.usart.Text = "Via Usart";
+            this.usart.Visible = false;
             // 
             // utilisateurGroup
             // 
