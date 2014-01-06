@@ -16,14 +16,14 @@
 //**********************
 //* VARIABLES GLOBALES *
 //**********************
-enum {NUM, ANA};
-enum {OUT, IN};
-enum {OFF, ON};
+enum {NUM, ANA};        //NUM = 0, ANA = 1
+enum {OUT, IN};         //OUT = 0, IN = 1
+enum {OFF, ON};         //OFF = 0, ON = 1
 
 //**********
 //* DEFINE *
 //**********
-#define IO_LED  PORTCbits.RC6
-#define IO_REL  PORTBbits.RB4
+#define IO_LED  PORTCbits.RC2       //I/O pour la led
+#define IO_REL  PORTBbits.RB4       //I/O pour le relais
 
 #endif

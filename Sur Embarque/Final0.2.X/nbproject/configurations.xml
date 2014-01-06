@@ -4,34 +4,37 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TIMERS.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TIOS.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/head.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/xlcd.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/ftoa/ftoa.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/periph/1wire.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/periph/affi.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/periph/boutons.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/periph/usart.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TCPIP Stack/ARP.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TCPIP Stack/Announce.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TCPIP Stack/DNS.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TCPIP Stack/Delay.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TCPIP Stack/ENC28J60.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TCPIP Stack/Helpers.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TCPIP Stack/ICMP.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TCPIP Stack/IP.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TCPIP Stack/MAC.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TCPIP Stack/SPIFlash.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TCPIP Stack/SPIRAM.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TCPIP Stack/StackTsk.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TCPIP Stack/TCP.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TCPIP Stack/TCPIP.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TCPIP Stack/TCPPerformanceTest.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TCPIP Stack/Tick.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TCPIP Stack/UDP.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TCPIP Stack/UDPPerformanceTest.h</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TCPIP Stack/XEEPROM.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/Compiler.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/HardwareProfile.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCPIPConfig.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TIMERS.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TIOS.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/head.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/xlcd.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCPIP Stack/ARP.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCPIP Stack/Announce.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCPIP Stack/DNS.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCPIP Stack/Delay.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCPIP Stack/ENC28J60.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCPIP Stack/Helpers.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCPIP Stack/ICMP.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCPIP Stack/IP.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCPIP Stack/MAC.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCPIP Stack/SPIFlash.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCPIP Stack/SPIRAM.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCPIP Stack/StackTsk.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCPIP Stack/TCP.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCPIP Stack/TCPIP.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCPIP Stack/TCPPerformanceTest.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCPIP Stack/Tick.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCPIP Stack/UDP.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCPIP Stack/UDPPerformanceTest.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCPIP Stack/XEEPROM.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/periph/1wire.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/periph/affi.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/periph/boutons.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/periph/usart.h</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/ftoa/ftoa.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -41,43 +44,43 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="ftoa" displayName="ftoa" projectFiles="true">
-        <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/ftoa/ftoa.c</itemPath>
+        <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/ftoa/ftoa.c</itemPath>
       </logicalFolder>
       <logicalFolder name="periph" displayName="periph" projectFiles="true">
-        <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/periph/1wire.c</itemPath>
-        <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/periph/affi.c</itemPath>
-        <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/periph/boutons.c</itemPath>
-        <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/periph/usart.c</itemPath>
+        <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/periph/1wire.c</itemPath>
+        <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/periph/affi.c</itemPath>
+        <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/periph/boutons.c</itemPath>
+        <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/periph/usart.c</itemPath>
       </logicalFolder>
       <logicalFolder name="XLCD" displayName="XLCD" projectFiles="true">
-        <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/XLCD/busyxlcd.c</itemPath>
-        <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/XLCD/openxlcd.c</itemPath>
-        <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/XLCD/putrxlcd.c</itemPath>
-        <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/XLCD/putsxlcd.c</itemPath>
-        <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/XLCD/readaddr.c</itemPath>
-        <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/XLCD/readdata.c</itemPath>
-        <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/XLCD/setcgram.c</itemPath>
-        <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/XLCD/setddram.c</itemPath>
-        <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/XLCD/wcmdxlcd.c</itemPath>
-        <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/XLCD/writdata.c</itemPath>
+        <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/XLCD/busyxlcd.c</itemPath>
+        <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/XLCD/openxlcd.c</itemPath>
+        <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/XLCD/putrxlcd.c</itemPath>
+        <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/XLCD/putsxlcd.c</itemPath>
+        <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/XLCD/readaddr.c</itemPath>
+        <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/XLCD/readdata.c</itemPath>
+        <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/XLCD/setcgram.c</itemPath>
+        <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/XLCD/setddram.c</itemPath>
+        <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/XLCD/wcmdxlcd.c</itemPath>
+        <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/XLCD/writdata.c</itemPath>
       </logicalFolder>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/Main.c</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TIMERS.c</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TIOS.c</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/ARP.c</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/Announce.c</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/DNS.c</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/Delay.c</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/ENC28J60.c</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/Helpers.c</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/ICMP.c</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/IP.c</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/StackTsk.c</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TCP.c</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/TCPPerformanceTest.c</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/Tick.c</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/UDP.c</itemPath>
-      <itemPath>C:/Users/AkenOo/MPLABXProjects/Final0.2.X/UDPPerformanceTest.c</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/ARP.c</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/Announce.c</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/DNS.c</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/Delay.c</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/ENC28J60.c</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/Helpers.c</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/ICMP.c</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/IP.c</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/Main.c</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/StackTsk.c</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCP.c</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TCPPerformanceTest.c</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TIMERS.c</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/TIOS.c</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/Tick.c</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/UDP.c</itemPath>
+      <itemPath>D:/Users/Michael/TI 3/Traitement des donnees/Projet Doc/Good/Sur Embarque/Final0.2.X/UDPPerformanceTest.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -86,10 +89,10 @@
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
-    <Elem>C:\Users\AkenOo\MPLABXProjects\Final0.2.X\periph</Elem>
-    <Elem>C:\Users\AkenOo\MPLABXProjects\Final0.2.X\ftoa</Elem>
-    <Elem>C:\Users\AkenOo\MPLABXProjects\Final0.2.X\XLCD</Elem>
-    <Elem>C:\Users\AkenOo\MPLABXProjects\Final0.2.X\TCPIP Stack</Elem>
+    <Elem>D:\Users\Michael\TI 3\Traitement des donnees\Projet Doc\Good\Sur Embarque\Final0.2.X\TCPIP Stack</Elem>
+    <Elem>D:\Users\Michael\TI 3\Traitement des donnees\Projet Doc\Good\Sur Embarque\Final0.2.X\periph</Elem>
+    <Elem>D:\Users\Michael\TI 3\Traitement des donnees\Projet Doc\Good\Sur Embarque\Final0.2.X\ftoa</Elem>
+    <Elem>D:\Users\Michael\TI 3\Traitement des donnees\Projet Doc\Good\Sur Embarque\Final0.2.X\XLCD</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -124,8 +127,8 @@
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
       </makeCustomizationType>
       <C18>
-        <property key="code-model" value="mS"/>
-        <property key="data-model" value="Oa-"/>
+        <property key="code-model" value="ms"/>
+        <property key="data-model" value="oa-"/>
         <property key="default-char-unsigned" value="false"/>
         <property key="enable-all-optimizations" value="true"/>
         <property key="enable-int-promotion" value="false"/>
@@ -141,7 +144,8 @@
         <property key="enable-ot" value="true"/>
         <property key="enable-ou" value="true"/>
         <property key="enable-ow" value="true"/>
-        <property key="extra-include-directories" value=""/>
+        <property key="extra-include-directories"
+                  value="D:\Users\Michael\TI 3\Traitement des donnees\Projet Doc\Good\Sur Embarque\Final0.2.X"/>
         <property key="optimization-master" value="Enable all"/>
         <property key="preprocessor-macros" value=""/>
         <property key="procedural-abstraction-passes" value="4"/>
@@ -167,6 +171,34 @@
         <property key="stack-analysis-mplink" value="false"/>
       </C18LanguageToolchain>
       <ICD3PlatformTool>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="Freeze Peripherals" value="true"/>
+        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
+        <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="hwtoolclock.frcindebug" value="false"/>
+        <property key="memories.aux" value="false"/>
+        <property key="memories.bootflash" value="false"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.flashdata" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.end" value="0xffff"/>
+        <property key="memories.programmemory.start" value="0x0"/>
+        <property key="poweroptions.powerenable" value="false"/>
+        <property key="programoptions.eraseb4program" value="true"/>
+        <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveprogramrange.end" value="0xffff"/>
+        <property key="programoptions.preserveprogramrange.start" value="0x0"/>
+        <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.testmodeentrymethod" value="VPPFirst"/>
+        <property key="programoptions.usehighvoltageonmclr" value="false"/>
+        <property key="programoptions.uselvpprogramming" value="false"/>
+        <property key="voltagevalue" value="5.0"/>
       </ICD3PlatformTool>
     </conf>
   </confs>

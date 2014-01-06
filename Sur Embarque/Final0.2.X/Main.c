@@ -594,7 +594,10 @@ void getTemperature(void){
     }
     else
     {
-        IO_LED = !IO_LED;
+        if(IO_LED == ON)
+            IO_LED = OFF;
+        else
+            IO_LED = ON;
         temperature = Read_Temperature();   //enregistrement de la temperature dans une variable
         etatTemperature = 0;
     }

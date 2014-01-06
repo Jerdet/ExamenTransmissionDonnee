@@ -2,7 +2,7 @@
 #define __TIOS_H
 
 
-#define MAXCALLBACKCHRONO   10
+#define MAXCALLBACKCHRONO   3
 //Définit le nombre maximal de callback de type Chrono
 
 //**********************************************************

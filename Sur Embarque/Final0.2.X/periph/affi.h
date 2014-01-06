@@ -4,6 +4,6 @@
 void DelayFor18TCY(void);
 void DelayPORXLCD(void);
 void DelayXLCD(void);
-void initLCD(void);
+void initLCD(void);         //définit les TRIS pour le LCD
 
 #endif
