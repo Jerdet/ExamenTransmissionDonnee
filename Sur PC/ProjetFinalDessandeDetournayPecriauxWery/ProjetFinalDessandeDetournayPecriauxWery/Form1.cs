@@ -18,15 +18,15 @@ namespace ProjetFinalDessandeDetournayPecriauxWery
 {
     public partial class ProjetFinal : Form
     {
-        int compteurChoix = 0;
+        int compteurChoix = 0; //switch entre la température et les lux
         int compteurUsart = 0;
-        private TcpListener tcpListener;
-        private Thread listenThread;
+        private TcpListener tcpListener; //Objet pour gérer la connexion tcp
+        private Thread listenThread; //Objet pour gérer le thread du tcp
         private delegate void ChangeLabelTcp(string str); //Creation du delegate pour le thread tcp
         private delegate void ChangeEtatGroup(bool valeur); //Creation du delegate pour afficher ou non le group des Pings
         private delegate void ReceiveSerial(string str); //Creation du delegate pour le thread du serialport
         string ipclient = "";
-        string[] listePorts;
+        string[] listePorts; //Tableau qui récupère la liste des ports
         /*float temperatureMax = float.MinValue;
         float temperatureMin = float.MaxValue;
         float temperatureTotal = 0;
@@ -41,11 +41,10 @@ namespace ProjetFinalDessandeDetournayPecriauxWery
         }
         //TCPServerEthernet.Server serveurTCP
         public void initialiseComboBoxSerial(){
-            listePorts = System.IO.Ports.SerialPort.GetPortNames();
-            choixPortSerial.DataSource = listePorts;
+            listePorts = System.IO.Ports.SerialPort.GetPortNames(); //Récupérer tout les ports série disponibles sur le PC
+            choixPortSerial.DataSource = listePorts; //Les mettres dans la combobox
         }
         public void Serveur(){
-            //this.tcpListener = new TcpListener(IPAddress.Any, 3000);
             this.tcpListener = new TcpListener(IPAddress.Any, 45684);
             this.listenThread = new Thread(new ThreadStart(ListenForClients));
             this.listenThread.Start();
@@ -72,12 +71,12 @@ namespace ProjetFinalDessandeDetournayPecriauxWery
 
         private void ListenForClients()
         {
-            this.tcpListener.Start();
+            this.tcpListener.Start(); //Initialisation du socket TCP comme sur le PIC
 
             while (true)
             {
                 //Tant qu'un client ne s'est pas connecté
-                TcpClient carte = this.tcpListener.AcceptTcpClient();
+                TcpClient carte = this.tcpListener.AcceptTcpClient(); //Accepte une demande de connexion en attente
                 //Création d'un thread pour garder la communication
                 Thread threadCarte = new Thread(new ParameterizedThreadStart(HandleClientComm));
                 threadCarte.Start(carte);
@@ -87,8 +86,8 @@ namespace ProjetFinalDessandeDetournayPecriauxWery
 
         private void HandleClientComm(object carte)
         {
-            TcpClient tcpClient = (TcpClient)carte;
-            NetworkStream clientStream = tcpClient.GetStream();
+            TcpClient tcpClient = (TcpClient)carte; //On caste le thread en type TcpClient
+            NetworkStream clientStream = tcpClient.GetStream(); //Flux du client utilisé pour l'envoie et la réception de données
 
             byte[] message = new byte[4096];
             int byteslus;
@@ -97,12 +96,13 @@ namespace ProjetFinalDessandeDetournayPecriauxWery
             {
                 byteslus = 0;
 
+                //Connexion d'un client et réception en cours
                 try
                 {
-                    this.Invoke(new ChangeLabelTcp(ChangeLabelEtatConnexion), "Client connecté"); //On signale la connexion d'un client
-                    ipclient = ((IPEndPoint)tcpClient.Client.RemoteEndPoint).Address.ToString();
-                    this.Invoke(new ChangeLabelTcp(ChangeLabelIPClient), ipclient);
-                    this.Invoke(new ChangeEtatGroup(ChangeEtatDuGroup), true);
+                    this.Invoke(new ChangeLabelTcp(ChangeLabelEtatConnexion), "Client connecté"); //On signale la connexion d'un client en changeant le label avec un delegate
+                    ipclient = ((IPEndPoint)tcpClient.Client.RemoteEndPoint).Address.ToString(); //On récupère l'IP du client
+                    this.Invoke(new ChangeLabelTcp(ChangeLabelIPClient), ipclient); //On change le label pour afficher l'IP
+                    this.Invoke(new ChangeEtatGroup(ChangeEtatDuGroup), true); //Changement de l'état du groupe ping pour afficher le group ping lorsqu'il y a une connexion
                     byteslus = clientStream.Read(message, 0, 4096); //Tant qu'un client n'envoie pas de message
                 }
                 catch
@@ -122,7 +122,7 @@ namespace ProjetFinalDessandeDetournayPecriauxWery
                 ASCIIEncoding encoder = new ASCIIEncoding();
                 string chaine;
                 System.Diagnostics.Debug.WriteLine(encoder.GetString(message, 0, byteslus));
-                chaine = encoder.GetString(message,0,byteslus);
+                chaine = encoder.GetString(message,0,byteslus); //Un genre de ftoa pour les bytes vers string
                 compteurChoix++;
                 if(compteurChoix%2 != 0)
                     this.Invoke(new ChangeLabelTcp(ChangeLabelText), chaine);
@@ -135,7 +135,7 @@ namespace ProjetFinalDessandeDetournayPecriauxWery
         
         private void dataReceiveSerial(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
         {
-            string stringRead = serialPort.ReadExisting();
+            string stringRead = serialPort.ReadExisting(); //Lecture de ce qui est reçu sur le port série
             compteurUsart++;
             /*
             if (compteurUsart == 1)
@@ -150,9 +150,10 @@ namespace ProjetFinalDessandeDetournayPecriauxWery
             */
             this.Invoke(new ReceiveSerial(ChangeLabelPortSerie), stringRead);
             if (stringRead == "TATA" || stringRead == "TITI" || stringRead == "TOTO")
-                this.Invoke(new ChangeEtatGroup(ChangeEtatGroupAll), true);
+                this.Invoke(new ChangeEtatGroup(ChangeEtatGroupAll), true); //Si chaine ok -> affiche tout les groupeBox
             else
             {
+                //Sinon affiche un message box d'erreur et ferme tout les groupbox
                 this.Invoke(new ChangeEtatGroup(ChangeEtatGroupAll), false);
                 MessageBox.Show("Mauvais utilisateur !");
             }
@@ -169,8 +170,8 @@ namespace ProjetFinalDessandeDetournayPecriauxWery
             //Créer un buffer de 32 octets de transmission de données
             string donneePing = "abcdefghijklmnopqrstuvwxyz012345";
             byte[] buffer = Encoding.ASCII.GetBytes(donneePing);
-            int timeoutPing = 1000;
-            PingReply receptionPing = envoiPing.Send(ipclient, timeoutPing,buffer,optionsPing);
+            int timeoutPing = 1000; //Important ! Le temps qu'on attent pour la réponse du ping
+            PingReply receptionPing = envoiPing.Send(ipclient, timeoutPing,buffer,optionsPing); //Exécution du ping et réception sur l'objet de type PingReply
             if (receptionPing.Status == IPStatus.Success)
             {
                 chaineReponsePing += "Status du Ping: " + receptionPing.Status + "\n";
@@ -203,7 +204,7 @@ namespace ProjetFinalDessandeDetournayPecriauxWery
 
         private void buttonEnvoyer_Click(object sender, EventArgs e)
         {
-            serialPort.Write(textID.Text + "\0");
+            serialPort.Write(textID.Text + "\0"); //Envoi la donnée qui se trouve dans le textID.Text sur le serial port
         }
 
         private void buttonDeconnexion_Click(object sender, EventArgs e)
@@ -219,8 +220,7 @@ namespace ProjetFinalDessandeDetournayPecriauxWery
 
         private void buttonChoixPort_Click(object sender, EventArgs e)
         {
-            if (serialPort.IsOpen)
-                serialPort.Close();
+            if (serialPort.IsOpen) serialPort.Close();
             if (choixPortSerial.SelectedIndex > -1)
             {
                 serialPort.PortName = (string)choixPortSerial.SelectedItem;
@@ -228,7 +228,7 @@ namespace ProjetFinalDessandeDetournayPecriauxWery
                 portSelectionne.Visible = true;
                 try
                 {
-                    serialPort.Open();
+                    serialPort.Open(); //Si une erreur se produit sur l'ouverture du port série, génère une exception et c'est traité en dessous
                     this.BackgroundImage = ProjetFinalDessandeDetournayPecriauxWery.Properties.Resources.rfidlogo;
                 }
                 catch (InvalidOperationException)

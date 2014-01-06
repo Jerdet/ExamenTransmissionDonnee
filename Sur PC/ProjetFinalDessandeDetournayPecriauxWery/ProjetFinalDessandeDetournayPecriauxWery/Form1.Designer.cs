@@ -117,7 +117,6 @@
             this.ethernet.TabIndex = 2;
             this.ethernet.TabStop = false;
             this.ethernet.Text = "Via Ethernet";
-            this.ethernet.Visible = false;
             // 
             // pingGroup
             // 
@@ -130,6 +129,7 @@
             this.pingGroup.TabIndex = 8;
             this.pingGroup.TabStop = false;
             this.pingGroup.Text = "Ping client";
+            this.pingGroup.Visible = false;
             // 
             // buttonPing
             // 
@@ -221,11 +221,11 @@
             // 
             this.messageLum.AutoSize = true;
             this.messageLum.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.messageLum.Location = new System.Drawing.Point(48, 26);
+            this.messageLum.Location = new System.Drawing.Point(30, 26);
             this.messageLum.Name = "messageLum";
-            this.messageLum.Size = new System.Drawing.Size(169, 28);
+            this.messageLum.Size = new System.Drawing.Size(186, 28);
             this.messageLum.TabIndex = 0;
-            this.messageLum.Text = "Lumière en lux : ";
+            this.messageLum.Text = "Lumière en volts : ";
             // 
             // usart
             // 
@@ -238,7 +238,6 @@
             this.usart.TabIndex = 3;
             this.usart.TabStop = false;
             this.usart.Text = "Via Usart";
-            this.usart.Visible = false;
             // 
             // utilisateurGroup
             // 
