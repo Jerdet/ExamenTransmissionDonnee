@@ -134,14 +134,14 @@ void getPcUsart(char *caractere);
  */
 void ethernetInit(void);
 /*
- * APPEL :
- * Descr :
- * INPUT :
- * OUTPUT:
+ * APPEL : ethernetInit();
+ * Descr : Initialise tout l'ethernet en ouvrant le socket etc...
+ * INPUT : N/A
+ * OUTPUT: N/A
  */
 void ethernetEnvoi(void);
 /*
- * APPEL :
+ * APPEL : ethernetEnvoi();
  * Descr :
  * INPUT :
  * OUTPUT:
@@ -300,7 +300,7 @@ void ethernetInit(){
     ENC_CS_IO=1; //Configuration de la pile
 
     TickInit(); //Initialisation de l'horloge de la pile TCPIP var utiliser le TMR0
-    InitAppConfig();
+    InitAppConfig(); //Une des fonctions du prof (ce qu'il a mis sur le portail)
 
     StackInit(); //Initialisation de la pile
     StackTask();
@@ -308,7 +308,7 @@ void ethernetInit(){
 
 //    MonSocket = TCPOpen((DWORD)0xC80A650A,TCP_OPEN_IP_ADDRESS,45684,TCP_PURPOSE_DEFAULT); //Ouverture d'un nouveau socket CLIENT ici TCP sur une certaine IP : 10.101.10.200
 //    MonSocket = TCPOpen((DWORD)0x4501A8C0,TCP_OPEN_IP_ADDRESS,45684,TCP_PURPOSE_DEFAULT); //ICI 192.168.1.69
-        MonSocket = TCPOpen((DWORD)0x660B650A,TCP_OPEN_IP_ADDRESS,45684,TCP_PURPOSE_DEFAULT); //ICI 10.101.11.102
+        MonSocket = TCPOpen((DWORD)0x660B650A,TCP_OPEN_IP_ADDRESS,45684,TCP_PURPOSE_DEFAULT); //ICI un client qui se connecte à l'IP 10.101.11.102
 //    MonSocket = TCPOpen(0,TCP_OPEN_SERVER,45684,TCP_PURPOSE_DEFAULT); //ICI 10.101.11.179
     if(MonSocket == INVALID_SOCKET){
         while(BusyXLCD());
@@ -594,6 +594,7 @@ void getTemperature(void){
     }
     else
     {
+        IO_LED = !IO_LED;
         temperature = Read_Temperature();   //enregistrement de la temperature dans une variable
         etatTemperature = 0;
     }
